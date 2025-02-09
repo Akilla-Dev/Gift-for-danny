@@ -17,9 +17,12 @@
 
 body {
   display: flex;
+  position: relative;
+  width: 100%;
   align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
+  background:url('../img/paisaje.gif')center/cover no-repeat !important;
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1920px;
@@ -1736,4 +1739,52 @@ h1 {
     text-decoration: none;
     font-size: 1rem;
     color: #1e1e1e;
+}
+
+/* estilos de invitación san valentin */
+
+.title{
+  color: white;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.container .btn{
+  display: flex;
+  gap: 25px;
+}
+
+.btn a{
+  text-decoration: none;
+  color: #111;
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 8px;
+  box-shadow: 0.5rem 1rem 3rem hsl(0,0,0,0.3);
+  --bg: #000;
+  --hover-bg: #ffb509;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.btn a:hover{
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+  color: white;
 }
